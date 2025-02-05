@@ -5,7 +5,6 @@ import { CategoryService } from '../../services/category.service';
 import { AsyncPipe } from '@angular/common';
 import { inject } from '@angular/core';
 
-
 const PIPES = [AsyncPipe];
 @Component({
   selector: 'app-category',
@@ -17,5 +16,5 @@ const PIPES = [AsyncPipe];
 export class CategoryComponent {
   private readonly categoryService = inject(CategoryService);
 
-  public categories = this.categoryService.getCategories();
+  // public categories = this.categoryService.getCategories();
 }
